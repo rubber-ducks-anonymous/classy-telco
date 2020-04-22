@@ -9,7 +9,7 @@ This project aims to answer why the customers churn for the telco company. This 
 - [ ] Notebook with report of the findings
 - [ ] `.csv` file with predictions
 - [ ] `.py` files:
-    - [ ] acquire.py
+    - [x] acquire.py 
     - [ ] prepare.py
     - [ ] model.py
 - [ ] Presentation
@@ -21,10 +21,10 @@ This project aims to answer why the customers churn for the telco company. This 
 
 ## Planning
 - [ ] Acquire
-    - [ ] acquire.py
-        - [ ] Get data from `MySQL`: `telco_churn`: `customers`
-        - [ ] Determine which tables join on
-        - [ ] Make function to acquire data into a `pd.DataFrame`
+    - [x] acquire.py
+        - [x] Get data from `MySQL`: `telco_churn`: `customers`
+        - [x] Determine which tables join on
+        - [x] Make function to acquire data into a `pd.DataFrame`
     - [ ] Notebook
         - [ ] Demonstrate acquire.py
         - [ ] Summarize data
