@@ -58,4 +58,28 @@ This project aims to answer why the customers churn for the telco company. This 
 ## Data Dictionary
 
 | Columns | Definition |
-| --- | --- |
+|:--------|-----------:|
+|  customer_id | customer number  |
+| gender  | gender identity |
+| senior_citizen  | 0 = senior citizen, 1 = not senior citizen  |
+| partner  | undefined  |
+| dependents  | undefined  |
+| tenure  | total months as customer  |
+| phone_service  | yes, no = phone service  |
+| multiple_lines  | yes, no, not phone service  |
+| internet_service_type_id  | no, yes, no internet serivice  |
+| online_security  | yes = subscribed, no = not subcribed, or no internet service |
+| online_backup  | yes = subscribed, no = not subcribed, or no internet service  |
+| device_protection  | yes = subscribed, no = not subcribed, or no internet service  |
+| tech_support   | yes = subscribed, no = not subcribed, or no internet service  |
+| streaming_tv   | yes = subscribed, no = not subcribed, or no internet service  |
+| streaming_movies  | yes = subscribed, no = not subcribed, or no internet service  |
+| contract_type_id  | refers to contract type  |
+| paperless_billing  | no = sent by mail, yes = electronic notification  |
+| payment_type_id  | id of method of payment  |
+| monthly_charges  | current monthly charge |
+| total_charges  | total charges since becoming a customer  |
+| churn  | yes = no longer a customer, no = still a customer  |
+| contract_type  | Month-to-month, Two year. One year  |
+| internet_service_type | None, DSL, Fiber optic  |
+| payment_type | method of payment |
