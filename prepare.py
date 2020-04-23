@@ -33,10 +33,23 @@ def remove_blank_total_charges(train_df, val_df, test_df):
     
     return train_df.dropna(), val_df.dropna(), test_df.dropna()
 
+def encode_yes_or_no(train, val, test):
+    df_list = [train, val, test]
+    
+    for df in df_list:
+        for col in df.columns.tolist():
+            if len(df[col].unique()) == 2:
+                if 'Male' in df[col].unique():
+                    df[f'{col}_encoded'] = df[col].replace('Male', 1).replace('Female', 0)
+                else:
+                    df[f'{col}_encoded'] = df[col].replace('Yes', 1).replace('No', 0)
+                
+    return train, val, test
+
 def prep_telco_data(df):
     df['tenure_years'] = df.tenure // 12
     train, val, test = split_data(df)
     train, val, test = remove_blank_total_charges(train, val, test)
-    
+    train, val, test = encode_yes_or_no(train, val, test)
     
     return train, val, test
