@@ -34,7 +34,9 @@ def remove_blank_total_charges(train_df, val_df, test_df):
     return train_df.dropna(), val_df.dropna(), test_df.dropna()
 
 def prep_telco_data(df):
+    df['tenure_years'] = df.tenure // 12
     train, val, test = split_data(df)
     train, val, test = remove_blank_total_charges(train, val, test)
+    
     
     return train, val, test
