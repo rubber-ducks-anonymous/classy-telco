@@ -32,12 +32,12 @@ This project aims to answer why the customers churn for the telco company. This 
 - [ ] Prepare
     - [ ] prepare.py
         - [ ] Ask if data dictionary should include created features
-        - [ ] Split data
-        - [ ] Handle Missing Values
+        - [x] Split data
+        - [x] Handle Missing Values
             - [ ] Handle datatype issues
         - [ ] Encode strings
         - [ ] Scale data
-        - [ ] Add new feature `tenure_years`
+        - [x] Add new feature `tenure_years`
         - [ ] Create feature that combines `phone_service` and `multiple_lines`
         - [ ] Create feature that combines `dependents` and `partner`
         - [ ] Look into merging other variables
