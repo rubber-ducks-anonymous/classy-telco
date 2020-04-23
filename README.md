@@ -54,3 +54,8 @@ This project aims to answer why the customers churn for the telco company. This 
 - [ ] Modeling
     - [ ] model.py
     - [ ] Notebook
+
+## Data Dictionary
+
+| Columns | Definition |
+| --- | --- |
