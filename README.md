@@ -44,10 +44,11 @@ This project aims to answer why the customers churn for the telco company. This 
             - [ ] ` streaming_tv` and `streaming_movies`
             - [ ] `online_security` and `online_backup`
     - [ ] Notebook
-        - [ ] Explore missing values and document takeaways/action plans for handling them.
-        - [ ] Document takeaways
+        - [x] Explore missing values and document takeaways/action plans for handling them.
+        - [x] Document takeaways
         - [ ] Explore datatypes
-        - [ ] Demonstrate prepare.py works by running it
+            - [ ] Adapt types or data values as needed to have numeric representation of each attribute.
+        - [x] Demonstrate prepare.py works by running it
 - [ ] Exploration
     - [ ] Answer key questions
 - [ ] Feature Engineering
