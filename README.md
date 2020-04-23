@@ -20,15 +20,15 @@ This project aims to answer why the customers churn for the telco company. This 
 **In progress**
 
 ## Planning
-- [ ] Acquire
+- [x] Acquire
     - [x] acquire.py
         - [x] Get data from `MySQL`: `telco_churn`: `customers`
         - [x] Determine which tables join on
         - [x] Make function to acquire data into a `pd.DataFrame`
-    - [ ] Notebook
-        - [ ] Demonstrate acquire.py
-        - [ ] Summarize data
-        - [ ] Plot Distributions
+    - [x] Notebook
+        - [x] Demonstrate acquire.py
+        - [x] Summarize data
+        - [x] Plot Distributions
 - [ ] Prepare
     - [ ] prepare.py
         - [ ] Ask if data dictionary should include created features
