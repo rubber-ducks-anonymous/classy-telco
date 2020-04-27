@@ -29,13 +29,12 @@ This project aims to answer why the customers churn for the telco company. This 
         - [x] Demonstrate acquire.py
         - [x] Summarize data
         - [x] Plot Distributions
-- [ ] Prepare
-    - [ ] prepare.py
-        - [ ] Ask if data dictionary should include created features
+- [x] Prepare
+    - [x] prepare.py
         - [x] Split data
         - [x] Handle Missing Values
             - [ ] Handle datatype issues
-        - [ ] Encode strings
+        - [x] Encode strings
         - [ ] Scale data
         - [x] Add new feature `tenure_years`
         - [ ] Create feature that combines `phone_service` and `multiple_lines`
@@ -43,18 +42,18 @@ This project aims to answer why the customers churn for the telco company. This 
         - [ ] Look into merging other variables
             - [ ] ` streaming_tv` and `streaming_movies`
             - [ ] `online_security` and `online_backup`
-    - [ ] Notebook
+    - [x] Notebook
         - [x] Explore missing values and document takeaways/action plans for handling them.
         - [x] Document takeaways
-        - [ ] Explore datatypes
-            - [ ] Adapt types or data values as needed to have numeric representation of each attribute.
+        - [x] Explore datatypes
+            - [x] Adapt types or data values as needed to have numeric representation of each attribute.
         - [x] Demonstrate prepare.py works by running it
-- [ ] Exploration
+- [x] Exploration
     - [ ] Answer key questions
 - [ ] Feature Engineering
-- [ ] Modeling
-    - [ ] model.py
-    - [ ] Notebook
+- [x] Modeling
+    - [x] model.py
+    - [x] Notebook
 
 ## Data Dictionary
 
