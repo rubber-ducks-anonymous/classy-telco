@@ -6,18 +6,37 @@ This project aims to answer why the customers churn for the telco company. This 
 
 ## Goals
 
-- [ ] Notebook with report of the findings
-- [ ] `.csv` file with predictions
-- [ ] `.py` files:
+- [X] Notebook with report of the findings
+- [x] `.csv` file with predictions
+- [x] `.py` files:
     - [x] acquire.py 
-    - [ ] prepare.py
-    - [ ] model.py
-- [ ] Presentation
-- [ ] Completed README
+    - [x] prepare.py
+- [x] Presentation
+- [x] Completed README
 
 ## How to Reproduce
 
-**In progress**
+### First clone this repo
+
+### acquire.py 
+
+* Must include `env.py` file in directory.
+    * Contact [Codeup](https://codeup.com/contact/) to request access to the MySQL Server that the data is stored on.
+    * `env.py` should include the following variables
+        * `user` - should be your username
+        * `password` - your password
+        * `host` - the host address for the MySQL Server
+
+* As long as you have the env file then `get_telco_data()` will do the rest on it's own.
+
+### prep.py
+* `prep_telco_data()` will split, clean, and encode the data for the preparation stage.
+
+* `prep_all_data()` will clean and encode a dataframe for using in modeling
+
+### telco_churn_report.ipynb
+
+* This contains the report of what is causing churn and a walkthrough of the pipeline to creating a model to predict whether a customer will churn.
 
 ## Planning
 - [x] Acquire
@@ -33,7 +52,7 @@ This project aims to answer why the customers churn for the telco company. This 
     - [x] prepare.py
         - [x] Split data
         - [x] Handle Missing Values
-            - [ ] Handle datatype issues
+            - [x] Handle datatype issues
         - [x] Encode strings
         - [ ] Scale data
         - [x] Add new feature `tenure_years`
@@ -52,7 +71,6 @@ This project aims to answer why the customers churn for the telco company. This 
     - [ ] Answer key questions
 - [ ] Feature Engineering
 - [x] Modeling
-    - [x] model.py
     - [x] Notebook
 
 ## Data Dictionary
