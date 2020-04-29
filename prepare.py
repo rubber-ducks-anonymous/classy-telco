@@ -53,3 +53,31 @@ def prep_telco_data(df):
     train, val, test = encode_yes_or_no(train, val, test)
     
     return train, val, test
+
+def remove_blank_total_charges_all_data(df):
+    '''Takes in a train, validate, and test DataFrame, removes blank rows, and returns the train, validate, and test DataFrames'''
+    df.total_charges = (df.total_charges
+                           .str
+                           .strip()
+                           .replace('', np.nan)
+                           .astype('float')
+                          )
+    
+    return df
+
+def encode_yes_or_no_all_data(df):
+    for col in df.columns.tolist():
+        if len(df[col].unique()) == 2:
+            if 'Male' in df[col].unique():
+                df[f'{col}_encoded'] = df[col].replace('Male', 1).replace('Female', 0)
+            else:
+                df[f'{col}_encoded'] = df[col].replace('Yes', 1).replace('No', 0)
+                
+    return df
+
+def prep_all_data(df):
+    df['tenure_years'] = df.tenure // 12
+    df = remove_blank_total_charges_all_data(df)
+    df = encode_yes_or_no_all_data(df)
+    
+    return df
